@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int orignum=num;
+	    int sum=0;
+	    int r;
+	    int x;
+	    while(num!=0){
+	        r=num%10;
+	        x=r*r*r;
+	        sum=sum+x;
+	        num=num/10;
+	    }
+	    if(sum==orignum){
+		    System.out.println(sum);
+	    }
+	
+	}
+}
